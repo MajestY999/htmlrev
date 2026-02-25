@@ -1,17 +1,21 @@
+*::selection{
+  background-color: #050038;
+}
+
 #heroButton {
   background-color: #4262ff;
   color: #ffffff;
 }
 
-#heroButton:hover{
+#heroButton:hover {
   background-color: #122db6;
 }
 
-#heroButton:active{
+#heroButton:active {
   background-color: #071766;
 }
 
-.heroForm input:focus{
+.heroForm input:focus {
   background-color: aliceblue;
 }
 
@@ -19,6 +23,16 @@
   color: #4262ff;
   text-decoration: underline;
   font-size: 18px;
+}
+
+a::after {
+  color: red;
+  content: " ! ";
+}
+
+a::before {
+  color: red;
+  content: " ! ";
 }
 
 h1 {
@@ -51,18 +65,19 @@ header a {
   text-decoration: none;
 }
 
-ul li:first-child{
-  color: #4262ff;
-}
-
-ul li:last-child{
+ul li:nth-child(2n) {
+  /* even(каждый второй начиная со воторого) odd(каждый первый начиная с первого)
+  также есть вариант с last-child только начинает с конца*/
   color: grey;
 }
 
-
-.heroForm + p{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #050038;
+.heroForm + p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #050038;
 }
+
+/*p:not(.sectionText){
+  color: red ;
+}*/
