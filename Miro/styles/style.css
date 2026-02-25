@@ -65,11 +65,7 @@ header a {
   text-decoration: none;
 }
 
-ul li:nth-child(2n) {
-  /* even(каждый второй начиная со воторого) odd(каждый первый начиная с первого)
-  также есть вариант с last-child только начинает с конца*/
-  color: grey;
-}
+
 
 .heroForm + p {
   font-weight: 400;
@@ -81,3 +77,9 @@ ul li:nth-child(2n) {
 /*p:not(.sectionText){
   color: red ;
 }*/
+
+
+.sectionList{
+  list-style-type: none;
+  list-style-image: url('../images//check.svg');
+}
