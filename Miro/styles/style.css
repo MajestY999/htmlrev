@@ -1,3 +1,11 @@
+*body {
+  margin: 0;
+}
+
+*footer{
+
+}
+
 #heroButton {
   background-color: #4262ff;
   color: #ffffff;
@@ -13,6 +21,45 @@
 #heroButton.test.test2 {
   background-color: #4262ff;
 }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  padding: 33px 50px; /* Два значения: padding: 33px 50px; — 33px (вертикаль/верх-низ), 55px (горизонталь/лево-право). */
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 60px;
+}
+
+footer{
+  background: #050038;
+  padding: 47px 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer div{
+  color: white;
+}
+
+.heroForm input {
+  border-radius: 32px;
+  border: 1px solid #9b99af;
+  height: 38px;
+  padding: 5px 10px;
+}
+
+.heroForm button {
+  height: 48px;
+  border: 1px solid #4262ff;
+  border-radius: 32px;
+  padding: 10px 20px ;
+}
 
 .heroForm input:focus {
   background-color: aliceblue;
@@ -23,37 +70,31 @@
   text-decoration: underline;
   font-size: 18px;
 }
-/* 
-a::after {
-  color: red;
-  content: " ! ";
-}
-
-a::before {
-  color: red;
-  content: " ! ";
-} */
-
 h1 {
   font-size: 48px;
   line-height: 56px;
+  margin: 0 0 17px 0;
+  padding: 0px;
 }
 .heroText {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #696688;
+  margin: 0 0 55px;
 }
 
 h2 {
   font-size: 48px;
   line-height: 56px;
+  margin: 0 0 19px 0;
 }
 .sectionText {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: #696688;
+  margin: 0 0 40px 0;
 }
 
 header a {
@@ -69,15 +110,14 @@ header a {
   font-size: 14px;
   line-height: 24px;
   color: #050038;
+  margin: 8px 0 52px 0;
 }
 
 /*p:not(.sectionText){
   color: red ;
 }*/
 
-nav ul {
-  list-style: none;
-}
+
 
 .sectionList {
   list-style: none;
@@ -91,8 +131,9 @@ nav ul {
 .experimentBlue {
   background: #071766;
   width: 400px; /* ширина */
-  height: 300px; /* высота*/
+  height: 400px; /* высота*/
   color: white;
   padding: 10px 20px 30px 40px; /* проще сказать что 10px сверху, 20 px справа, 30px снизу, 40px слева*/
   border: 5px solid grey;
+  /* margin: 10px auto; */
 }
