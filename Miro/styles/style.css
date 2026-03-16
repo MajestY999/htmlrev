@@ -2,11 +2,12 @@
   margin: 0;
 }
 
-*footer{
+/* *footer{
 
-}
+} */
 
 #heroButton {
+  transition: background-color 1s;
   background-color: #4262ff;
   color: #ffffff;
 }
@@ -25,6 +26,9 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex; /*Делаем так чтобы наши элементы мы могли перемещать как нужно */
+  justify-content: flex-start; /*делаем чтобы текст  был по левому краю */
+  gap: 34px; /*расстояние элементов друг от друга*/
 }
 
 nav {
@@ -33,7 +37,7 @@ nav {
   margin-bottom: 60px;
 }
 
-footer{
+footer {
   background: #050038;
   padding: 47px 40px;
 }
@@ -43,7 +47,7 @@ footer a {
   text-decoration: none;
 }
 
-footer div{
+footer div {
   color: white;
 }
 
@@ -58,7 +62,7 @@ footer div{
   height: 48px;
   border: 1px solid #4262ff;
   border-radius: 32px;
-  padding: 10px 20px ;
+  padding: 10px 20px;
 }
 
 .heroForm input:focus {
@@ -117,8 +121,6 @@ header a {
   color: red ;
 }*/
 
-
-
 .sectionList {
   list-style: none;
   /* list-style-image: url("../images//check.svg"); */
@@ -136,4 +138,78 @@ header a {
   padding: 10px 20px 30px 40px; /* проще сказать что 10px сверху, 20 px справа, 30px снизу, 40px слева*/
   border: 5px solid grey;
   /* margin: 10px auto; */
+}
+
+.exp div {
+  width: 200px;
+  height: 200px;
+  background-color: #050038;
+  margin: 10px;
+  transition: margin-left 2s;
+  color: white;
+  font-size: 15px;
+  animation: my-move 2s ease forwards;
+
+  animation-name: my-move;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  /* animation-iteration-count: 5; */
+  animation-direction: alternate;
+   animation-play-state: paused
+}
+
+@keyframes my-move {
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%) translateY(-100%);
+  }
+  75% {
+    transform: translateX(0%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+/* 
+.exp div:nth-child(1):hover {
+  transform: rotate(45deg);
+}
+
+.exp div:nth-child(2):hover {
+  transform: scale(2, 1);
+}
+
+.exp div:nth-child(3):hover {
+  transform: translateX(300px);
+}
+
+.exp div:nth-child(4):hover {
+  transform: skew(10deg);
+}
+
+.exp div:nth-child(5):hover {
+} */
+
+.exp:hover div {
+  transform: translateX(100%);
+  /* animation-play-state: paused ;
+ */
+}
+
+
+@media(min-width: 550px ){ /*вместо этого чаще всего используют min-width или max-width*/
+  h1{ 
+    color: red;
+  }
+}
+
+
+@media(max-width: 550px ){ /*вместо этого чаще всего используют min-width или max-width*/
+  h2{ 
+    color: green;
+  }
 }
