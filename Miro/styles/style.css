@@ -90,10 +90,11 @@ h2 {
   margin: 0 0 19px 0;
 }
 
-h1, h2{
+h1,
+h2 {
   font-weight: 400;
   font-size: 2vw;
-   /* font-size: 48px; */
+  /* font-size: 48px; */
   line-height: 56px;
 }
 .sectionText {
@@ -144,7 +145,7 @@ header a {
 }
 
 .exp div {
-  width: calc(100% / 3);
+  width: min(10vh, 200px);
   height: 200px;
   background-color: #050038;
   margin: 10px;
