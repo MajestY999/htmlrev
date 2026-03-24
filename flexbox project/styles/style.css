@@ -11,16 +11,19 @@ body {
 
 .container {
   border: 10px solid #6c38cc;
-  /* height: 200vh; */
   display: flex;
-  justify-content:  center;
-  align-items: baseline;
   height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-start; */
+  align-content: space-between;
+  flex-direction: column;
 }
 
-.item {
+.item { 
   background: #232228;
   border: 1px solid #6c38cc;
   text-align: center;
+  width: calc(100% / 3);
   padding: 10px;
 }
