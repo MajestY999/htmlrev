@@ -13,17 +13,19 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   height: 100vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: flex-start; */
-  align-content: space-between;
   flex-direction: column;
+  align-items: flex-start;
+ 
 }
 
 .item { 
   background: #232228;
   border: 1px solid #6c38cc;
-  text-align: center;
-  width: calc(100% / 3);
   padding: 10px;
+}
+
+
+.item2{
+  align-self: center;
+  
 }
