@@ -12,6 +12,9 @@ body {
 .container {
   border: 10px solid #6c38cc;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .item {
@@ -19,12 +22,10 @@ body {
   border: 1px solid #6c38cc;
   text-align: center;
   padding: 10px;
-  flex-basis: 200px;
-  /* flex-grow: 1; каждый элемент занимает именно где-то еденицу */
+  flex-basis: 300px;
+  flex-grow: 1; /*каждый элемент занимает именно где-то еденицу*/
 }
-
-
-/* .item1{
-  flex-grow: 1;
-  flex-shrink:1;
+/* 
+.item4{
+flex-grow: 5;
 } */
