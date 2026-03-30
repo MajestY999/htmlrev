@@ -13,8 +13,9 @@ body {
   border: 10px solid #6c38cc;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height: 100vh;
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  gap: 20px;
 }
 
 .item {
@@ -22,10 +23,5 @@ body {
   border: 1px solid #6c38cc;
   text-align: center;
   padding: 10px;
-  flex-basis: 300px;
-  flex-grow: 1; /*каждый элемент занимает именно где-то еденицу*/
+  flex: 1 1 calc(100% / 4 - 20px * 2 / 4);
 }
-/* 
-.item4{
-flex-grow: 5;
-} */
