@@ -12,10 +12,12 @@ body {
 .container {
   border: 10px solid #6c38cc;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   height: 50vh;
-  align-items: center;
-  
+  /* align-items: center; */
+  justify-content: center;
+  align-content: center;
   /* 
   align-items
   flex-end: прижимается к нижнему краю контейнера.
@@ -38,16 +40,7 @@ body {
 .item {
   background: #232228;
   border: 1px solid #6c38cc;
-  text-align: flex-end;
-
+  text-align: center;
+  width: calc(100% / 3);
   padding: 10px;
-}
-
-
-.item4{
-  font-size: 40px;
-}
-
-.item8{
-  font-size: 120px;
 }
