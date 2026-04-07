@@ -14,19 +14,18 @@ body {
   display: flex;
   /* height: 550px; */
   /* flex-flow:  row nowrap ; */
-  flex-direction: wrap;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* 
+  space-around: создает отступ между элементами, но и также есть отступн от конца в половину расстояния от других элемнтов(но в between такого нету там только между элементами )
+  space-between: тут тоже самое что и выше только правый и левые элемнты прижаты к обоим частям контейнера и кстати этот элемент работает только с контейнерным типом элементов. 
+  space-evenly: точно также как и around только он не заботится о том какое растояние а делает одно общее между другими контейнерами.
+  */
 }
 
 .item {
   background: #232228;
   border: 1px solid #6c38cc;
   text-align: center;
-  
-  width: calc(100% / 3);
   padding: 10px;
-}
-
-.item4{
-  order: 0;
 }
