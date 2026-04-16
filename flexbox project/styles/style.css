@@ -6,46 +6,29 @@ body {
   background: #1c1b21;
   color: #fafafa;
   font-size: 50px;
-  font-family: "Fira sans", sans-serif;
+  font-family: 'Fira sans', sans-serif;
 }
 
 .container {
   border: 10px solid #6c38cc;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 100vh;
-  align-items: flex-start;
-  /* justify-content: center;
-  align-content: center; */
-  /* 
-  align-items
-  flex-end: прижимается к нижнему краю контейнера.
-  flex-start: прижимается к вврехнему краю контейнера.
-  center: прижимает контейнер к центру контейнера
-  baseline: тоже самое что и flex-start
   
-  */
-  /* 
-  justify-content
-  space-around: создает отступ между элементами, но и также есть отступн от конца в половину расстояния от других элемнтов(но в between такого нету там только между элементами )
-  space-between: тут тоже самое что и выше только правый и левые элемнты прижаты к обоим частям контейнера и кстати этот элемент работает только с контейнерным типом элементов. 
-  space-evenly: точно также как и around только он не заботится о том какое растояние а делает одно общее между другими контейнерами.
-  */
-  /* justify-content: space-around; */
 
-  /* flex-flow:  row nowrap ; */
 }
 
 .item {
   background: #232228;
   border: 1px solid #6c38cc;
   text-align: center;
-  /* width: calc(100% / 3); */
   padding: 10px;
+  /* flex: 1;означает что он будет занимать только 1 фракцию всего объема.  и будут занимать одно и тоже расстояние */
 }
 
 
-.item2{
-  align-self: center;  /*делает так что именно этот элемент будет по центру а все сверху так как он как бы будет важнее align-items*/
+.item{
+  flex: 1;
+}
+
+.item3{
+flex: 2;
 }
