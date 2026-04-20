@@ -12,6 +12,9 @@ body {
 .container {
   border: 10px solid #6c38cc;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px ;
+  column-gap: 20px;
 }
 
 .item {
@@ -19,16 +22,5 @@ body {
   border: 1px solid #6c38cc;
   text-align: center;
   padding: 10px;
-  flex-basis: 300px;
-  flex-grow: 1;
-}
-
-.item1 {
-flex: 1 1 100px;
-}
-.item2 {
-  flex: 5 10 100px; /*сначала flex-grow оптом flex-shrink, потом и flex-basis*/
-  flex-grow: 5;
-  flex-shrink: 10;
-  flex-basis: 100px;
+  flex: 0 1 calc(100% / 3 - 20px * 2 / 3);
 }
