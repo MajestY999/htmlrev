@@ -4,8 +4,8 @@
  М - модификатор блока 
 */
 
-body{
-    background-color: grey;
+body {
+  background-color: grey;
 }
 
 .section-header {
@@ -26,18 +26,19 @@ button {
   border: none;
 }
 
-
-.button__primary{
-    background: #6c38cc;
-    color: white;
-    
+.button__primary {
+  background: #6c38cc;
+  color: white;
 }
-.button__ghost{
-    border: 1px solid #4d5064;
+.button__ghost {
+  border: 1px solid #4d5064;
 }
 
-.hero__button{
-    margin-left: 20px;
+.hero__button {
+  margin-left: 20px;
 }
 
-/* но  бэм как бы имеет минус в том что он становится массивным но для мкеня это нормально.  Точнее сам подход.  */
+/* но  бэм как бы имеет минус в том что он становится массивным но для мкеня это нормально.  
+Точнее сам подход,  
+но для того чтобы было меньше массивности, есть smacss,
+который разделяет все на модули  */
