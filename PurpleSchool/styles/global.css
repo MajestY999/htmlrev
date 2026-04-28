@@ -1,0 +1,38 @@
+body {
+  background: #16171d;
+}
+
+.section-header {
+}
+
+.section-header__top {
+}
+
+.section-header__h2 {
+}
+
+.button {
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  border-radius: 10px;
+  background: none;
+}
+
+.button__primary {
+  background: #6c38cc;
+  color: white;
+}
+
+.button__ghost {
+  border: 1px solid #4d5064;
+  color: #fafafa;
+  color: white;
+  
+}
+
+.hero__hutton{
+    margin: 32px;
+    gap: 32px;
+}
